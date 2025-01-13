@@ -1,0 +1,1 @@
+//Não sei se era necessario um arquivo js, então criei um arquivo vazio, se você quiserer que eu faça algo nele, só me falar.
