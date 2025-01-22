@@ -4,40 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>Processador de Arquivos</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.7.1/jszip.min.js"></script>
+<script src="script.js"></script>
+
+
+    <title>Compactador de Arquivos</title>
 </head>
 <body>
 <!-- Container Principal -->
 <div class="container">
 
   <!-- titulo -->
-  <h1>Processador de Arquivos</h1
+  <h1>Compactador de Arquivos</h1
     >
     <!-- Formulário para upload de arquivos -->
     <div class="form-container">
-        <form>
+        <form >
             <label for="file-upload" class="custom-file-upload">Upload de Arquivo</label>
             <input id="file-upload" type="file" accept=".txt,.pdf,.doc,.docx" required />  
-            <button type="submit">Confirmar</button>
+            <button  type="submit">Confirmar</button>
         </form>
     </div>
 
-<!-- Anuncio ou Box Explicativo -->
-    <div class="box">
-        <p>Aqui você pode processar seus arquivos!</p>
-    </div>
 
 <!-- Local para baixar o arquivo processado -->
-    <div class="processed-file">
-        <h2>Arquivo Processado</h2>
-        <p>Aguarde o processamento do seu arquivo</p>
-        <button class="download-button" style="display:inside;">Baixar Arquivo Processado</button>
+<div class="processed-file">
+    <h2>Arquivo Compactado</h2>
+    <p>Aguarde o processamento do seu arquivo para baixa-lo</p>
+    <div class="progress-container">
+        <progress id="progress-bar" value="0" max="100"></progress>
+        <span id="progress-text">0%</span>
     </div>
+    <button class="download-button" style="display:none;">Baixar Arquivo Processado</button>
 </div>
+
 
 <!-- Rodape para editar  -->
 <footer>
-    <p>&copy; 2025 Processador de Arquivos. Todos os direitos reservados.</p>
+    <p>&copy; 2025 Compactador de Arquivos. Todos os direitos reservados.</p>
 </footer>
 
 </body>
